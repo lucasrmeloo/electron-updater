@@ -1,0 +1,30 @@
+{
+  "name": "electron-app-update",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Lucas Melo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.2.1",
+    "electron-builder": "^24.6.4"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.4"
+  },
+  "build": {
+    "appId": "your.id",
+    "productName": "your",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
